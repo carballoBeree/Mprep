@@ -1,0 +1,12 @@
+
+{% block header %}
+  <h1>{% block title %}Artistas{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<ul> 
+{% for a in artist %}
+       <li> <h4>{{ a['artistas'] }}</h4> </li>
+  {% endfor %}
+</ul>  
+{% endblock %}

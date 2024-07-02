@@ -1,0 +1,11 @@
+{% block header %}
+  <h1>{% block title %}Albums{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<ul> 
+{% for al in album %}
+       <li> <h4>{{ al['albums'] }}</h4> </li>
+  {% endfor %}
+</ul>  
+{% endblock %}

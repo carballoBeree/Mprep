@@ -1,0 +1,11 @@
+{% block header %}
+  <h1>{% block title %}Generos{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<ul> 
+{% for g in genre %}
+       <li> <h4>{{ g['generos'] }}</h4> </li>
+  {% endfor %}
+</ul>  
+{% endblock %}
